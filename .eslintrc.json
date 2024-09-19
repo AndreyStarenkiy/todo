@@ -1,0 +1,38 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "airbnb/base",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:react/jsx-runtime"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": ["react", "react-hooks", "prettier"],
+  "rules": {
+    "no-unused-vars": [
+      "off",
+      {
+        "varsIgnorePattern": "React"
+      }
+    ],
+    "import/extensions": ["always"],
+    "func-style": ["error", "declaration", { "allowArrowFunctions": true }]
+    //add customize rules here as per your project's needs
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "arrow-body-style": ["never"]
+  }
+}
