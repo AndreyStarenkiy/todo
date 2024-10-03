@@ -1,13 +1,13 @@
 import React from 'react';
-/* import Task from './task';  */
+import Task from '../task/task';
 
-const TaskList = (/* props */) => (
+const TaskList = ({ label }) => (
   <ul className="todo-list">
     <li className="completed">
       <div className="view">
         <input className="toggle" type="checkbox" />
         <label>
-          <span className="description">Completed task</span>
+          <Task label={ label }/>
           <span className="created">created 17 seconds ago</span>
         </label>
         <button className="icon icon-edit"></button>

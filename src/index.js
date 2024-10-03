@@ -11,15 +11,16 @@ import Footer from './components/footer/footer';
 const root = ReactDOM.createRoot(document.getElementById('wrapper'));
 
 function ToDoApp() {
-  /* const preList = {
+  const preList = {
     important: true,
     label: 'Todoshka',
-  }; */
+  };
+
   return (
     <section id="todoapp" className="todoapp">
       <NewTaskForm />
       <section className="main">
-        <TaskList />
+        <TaskList { ...preList }/>
         <Footer />
       </section>
     </section>

@@ -25,7 +25,9 @@
         "varsIgnorePattern": "React"
       }
     ],
-    "import/extensions": ["always"],
+    "import/no-named-as-default": 0,
+    "import/extensions": ["off"],
+    "react/prop-types": 0,
     "func-style": ["error", "declaration", { "allowArrowFunctions": true }]
     //add customize rules here as per your project's needs
   },
