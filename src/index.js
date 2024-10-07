@@ -11,16 +11,29 @@ import Footer from './components/footer/footer';
 const root = ReactDOM.createRoot(document.getElementById('wrapper'));
 
 function ToDoApp() {
-  const preList = {
-    important: true,
-    label: 'Todoshka',
-  };
-
+  const preList = [
+    {
+      label: 'Todoshka',
+      important: true,
+      id: 1,
+    },
+    {
+      label: 'raz dva',
+      important: false,
+      id: 2,
+    },
+    {
+      label: 'Three',
+      important: false,
+      id: 3,
+    },
+  ];
+  console.log(preList);
   return (
     <section id="todoapp" className="todoapp">
       <NewTaskForm />
       <section className="main">
-        <TaskList { ...preList }/>
+        <TaskList props={preList} />
         <Footer />
       </section>
     </section>

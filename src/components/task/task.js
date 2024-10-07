@@ -4,6 +4,18 @@ import React from 'react';
 
 export default class Task extends React.Component {
   render() {
-    return <span>{this.props.label}</span>;
+    let label = this.props.label;
+
+    return (
+      <div className="view" key={this.props.id}>
+        <input className="toggle" type="checkbox" />
+        <label>
+          <span className="description" label={label} />
+          <span className="created">created ? seconds ago</span>
+        </label>
+        <button className="icon icon-edit"></button>
+        <button className="icon icon-destroy"></button>
+      </div>
+    );
   }
 }

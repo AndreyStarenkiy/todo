@@ -9,7 +9,7 @@ export default [
   pluginReact.configs.flat.recommended,
   {
     rules: {
-      "react/prop-types": 0,
-    }
-  }
+      'react/prop-types': 0,
+    },
+  },
 ];
